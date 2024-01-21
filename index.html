@@ -10,6 +10,22 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+            <!-- Add Live2D scripts -->
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@6.5.2/dist/browser/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display/dist/index.min.js"></script>
+    <style>
+        body {
+            overflow: hidden;
+        }
+#live2d-container {
+            position: absolute;
+            bottom: 0; /* Position at the bottom */
+            right: 0; /* Position at the right */
+            margin: 20px; /* Add some margin for spacing */
+        }
+    </style>
     </head>
     <body>
         <!-- Navigation-->
@@ -33,13 +49,20 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-6">
                         <h1 class="mt-5">Claudia:me</h1>
-                        <p>Picture this: You're sprawled on the couch, phone in hand, barely keeping your eyes open. Suddenly, a sleepy voice drawls, "Hey there, human. What's up with the existential dread?" That's Claudia, your pocket-sized panda bear of sarcasm, rolling in with just the right amount of sass and zero pressure.</p>
-                    </div>
+                          
+                          <p class="text-size">Picture this: You're sprawled on the couch, phone in hand, barely keeping your eyes open. Suddenly, a sleepy voice drawls, "Hey there, human. What's up with the existential dread?" That's Claudia, your pocket-sized panda bear of sarcasm, rolling in with just the right amount of sass and zero pressure.</p>                
+                </div>
                 </div>
             </div>
-
-
         </section>
+            
+
+    <div id="live2d-container">
+        <canvas id="canvas"></canvas>
+    </div>
+         <script src="js/live2d.js"></script>
+
+    </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

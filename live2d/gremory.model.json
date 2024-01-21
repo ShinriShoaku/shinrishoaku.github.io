@@ -1,0 +1,142 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "gremory",
+	"model": "gremory.moc",
+	"textures": [
+		"gremory.2048/texture_00.png"
+	],
+	"physics":"gremory.physics.json",
+	"hit_areas":[
+		{"name":"head","id":"D_REF.PT_HEAD"},
+		{"name":"bust","id":"D_REF.PT_BUST"},
+		{"name":"body","id":"D_REF.BODY_DOWN"},
+		{"name":"shoulder","id":"D_REF.BODY_UP"}
+	],
+	"expressions":[
+		{"name":"default","file":"expressions/normal.ame"},
+		{"name":"happy","file":"expressions/senang.ame"},
+		{"name":"cry","file":"expressions/normal.ame"},
+		{"name":"shock","file":"expressions/cemberut.ame"},
+		{"name":"nothing","file":"expressions/null.ame"},
+		{"name":"angry","file": "expressions/marah.ame"},
+		{"name":"lazy","file":"expressions/lazy.ame"},
+		{"name":"sleep","file":"expressions/sleep.ame"},
+		{"name":"who","file":"expressions/siapa.ame"},
+		{"name": "loading","file": "expressions/loading.ame"}
+	],
+	"motions":{
+		"idle":[
+			 {"file":"motions/idle_09.mtn","fade_in":2000, "fade_out":2000},
+			 {"file":"motions/idle_01.mtn","fade_in":2000, "fade_out":2000},
+			 {"file":"motions/idle_03.mtn","fade_in":2000, "fade_out":2000},
+			 {"file":"motions/idle_04.mtn","fade_in":2000, "fade_out":2000},
+			 {"file":"motions/idle_05.mtn","fade_in":2000, "fade_out":2000},
+			 {"file":"motions/idle_06.mtn","fade_in":2000, "fade_out":2000}
+		],
+		"night_id":[
+			{"file":"motions/idle_09.mtn","fade_in":2000, "fade_out":2000},
+			{"file":"motions/Night_idle_01.mtn","fade_in":2000, "fade_out":2000},
+			{"file":"motions/Night_idle_02.mtn","fade_in":2000, "fade_out":2000},
+			{"file":"motions/Night_idle_06.mtn","fade_in":2000, "fade_out":2000},
+			{"file":"motions/idle_sleep.mtn","fade_in":2000, "fade_out":2000}
+		],
+		"first_open":[
+			{"file":"motions/tsumiki_m_02.mtn","fade_out":0},
+			{"file":"motions/tsumiki_m_15.mtn","fade_out":0},
+			{"file":"motions/tsumiki_m_23.mtn","fade_out":0},
+			{"file":"motions/tsumiki_m_24.mtn","fade_out":0}	
+		],
+		"tap_bust":[
+			{"file":"motions/tsumiki_m_03.mtn", "fade_out":0},
+			{"file":"motions/tsumiki_m_08.mtn", "fade_out":0},
+			{"file":"motions/tsumiki_m_10.mtn", "fade_out":0},
+			{"file":"motions/TouchBust_01.mtn","fade_out": 0},
+			{"file":"motions/tsumiki_m_05.mtn", "fade_out":0}
+		],
+		"tap_head":[
+			{"file":"motions/tsumiki_m_17.mtn","fade_out":0},
+			{"file":"motions/tsumiki_m_15.mtn","fade_out":0},
+			{"file":"motions/tsumiki_m_18.mtn", "fade_out": 0}
+		],
+		"hem":[
+			{"file":"motions/tsumiki_m_01.mtn","fade_out":0},
+			{"file":"motions/tsumiki_m_01_df.mtn","fade_out":0}
+		],
+
+		"no":[
+			{"file":"motions/tsumiki_m_21.mtn","fade_out":0}
+		],
+
+		"no_master":[
+			{"file":"motions/noMaster.mtn","fade_out":0}
+		],
+
+		"refuse":[
+			{"file":"motions/refuse.mtn","fade_out":0}
+		],
+
+		"ok":[
+			{"file":"motions/tsumiki_m_09.mtn","fade_out":0},
+			{"file":"motions/tsumiki_m_22.mtn","fade_out":0}
+		],
+
+		"yes":[
+			{"file":"motions/yes.mtn","fade_out":0},
+			{"file":"motions/yesMaster.mtn","fade_out":0}
+		],
+		"yes_master":[
+			{"file":"motions/yesMaster.mtn","fade_out":0}
+		],
+		"waiting":[
+			{"file":"motions/tsumiki_m_04.mtn","fade_out":0},
+			{"file":"motions/tsumiki_m_19.mtn","fade_out":0},
+			{"file":"motions/tsumiki_m_20.mtn","fade_out":0}
+		],
+
+		"developer_note": [
+			{"name":"m01","file":"motions/tsumiki_m_09.mtn"},
+			{"name":"m02","file":"motions/tsumiki_m_02.mtn"},
+			{"name":"m03","file":"motions/tsumiki_m_14.mtn"},
+			{"name":"m04","file":"motions/tsumiki_m_20.mtn"},
+			{"name":"m05","file":"motions/tsumiki_m_19.mtn"},
+			{"name":"m06","file":"motions/tsumiki_m_04.mtn"},
+			{"name":"m07","file":"motions/tsumiki_m_11.mtn"},
+			{"name":"m08","file":"motions/tsumiki_m_12.mtn"},
+			{"name":"m10","file":"motions/tsumiki_m_14.mtn"},
+			{"name":"m11","file":"motions/tsumiki_m_20.mtn"},
+			{"name":"m12","file":"motions/tsumiki_m_19.mtn"},
+			{"name":"m13","file":"motions/tsumiki_m_10.mtn"},
+			{"name":"m02","file":"motions/tsumiki_m_09.mtn"}
+
+		],
+
+		"eh":[
+			{"file":"motions/tsumiki_m_05.mtn"}
+		],
+
+		"shy":[
+			{"file":"motions/tsumiki_m_06.mtn","fade_out":0}
+		],
+		"tap_body":[
+			{"file":"motions/tsumiki_m_04.mtn", "fade_out":0},
+			{"file":"motions/tsumiki_m_20.mtn", "fade_out":0},
+			{"file":"motions/tsumiki_m_16.mtn", "fade_out":0},
+			{"file":"motions/tsumiki_m_18.mtn", "fade_out":0}
+		],
+		"pinch_in":[
+			{"file":"motions/pinch_in_01.mtn"}
+		],
+		"pinch_out":[
+			{"file":"motions/pinch_out_01.mtn"}
+		],
+		"shake":[
+			{"file":"motions/tsumiki_m_07.mtn"},
+			{"file":"motions/tsumiki_m_11.mtn"},
+			{"file":"motions/tsumiki_m_13.mtn"}
+			
+		],
+		"flick_head":[
+			{"file":"motions/tsumiki_m_06.mtn"}
+		]
+	}
+}

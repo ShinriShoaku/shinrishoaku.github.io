@@ -10829,5 +10829,17 @@ body {
   background-size: cover;
 }
 section {
-  color: white;
+    padding: 70px 0; /* Add padding for better visibility */
+}
+
+.text-size {
+    font-size: 10px; /* Adjust the font size as needed */
+}
+
+section h1 {
+    color: white; /* Set h1 text color to white */
+}
+
+section p {
+    color: white; /* Set paragraph text color to white */
 }
