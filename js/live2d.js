@@ -1,5 +1,4 @@
-const cubism2Model =
-  "../live2d/gremory.model.json";
+const cubism2Model = 'live2d/gremory.model.json';
 
 (async function main() {
   const app = new PIXI.Application({
@@ -12,9 +11,9 @@ const cubism2Model =
   const model2 = await PIXI.live2d.Live2DModel.from(cubism2Model);
 
   // Set the position to the end horizontally and at the bottom vertically
-  model2.position.set((app.screen.width - model2.width * 0.3) , app.screen.height - model2.height * 0.3);
+  model2.position.set((app.screen.width - model2.width * 0.31), app.screen.height - model2.height * 0.25)/2;
 
   app.stage.addChild(model2);
 
-  model2.scale.set(0.3);
+  model2.scale.set(0.32);
 })();
